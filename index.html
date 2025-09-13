@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Incredible Sister</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="cover-page">
+        <h1 class="scrapbook-title">For My Incredible Sister, [Sister's Name]</h1>
+        <div class="polaroid">
+            <img src="her-photo.jpg" alt="A beautiful photo of my sister">
+            <p class="caption">The one who makes my world brighter.</p>
+        </div>
+        <button class="open-button">Open the memories</button>
+    </header>
+
+    <main class="memories-section hidden">
+        <section class="memory-page" id="first-memories">
+            <h2 class="page-title">Our First Memories</h2>
+            <div class="photo-container">
+                <div class="taped-photo" style="transform: rotate(-5deg);">
+                    <img src="baby-photo1.jpg" alt="Baby photo of us together">
+                    <div class="tape-piece top-left"></div>
+                    <div class="tape-piece bottom-right"></div>
+                </div>
+                <div class="taped-photo" style="transform: rotate(8deg);">
+                    <img src="baby-photo2.jpg" alt="Toddler photo of my sister">
+                    <div class="tape-piece top-right"></div>
+                    <div class="tape-piece bottom-left"></div>
+                </div>
+            </div>
+            <p class="memory-text">"Where it all began. My very first friend."</p>
+        </section>
+
+        <section class="memory-page" id="final-wish">
+            <div class="full-screen-photo-container">
+                <img src="final-photo.jpg" alt="A stunning photo of my sister" class="full-screen-photo">
+            </div>
+            <p class="final-message">Happy Birthday to my best friend, my confidante, my sister.</p>
+            <div class="confetti-animation"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
