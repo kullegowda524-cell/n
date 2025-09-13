@@ -1,0 +1,159 @@
+/* --- General Page Styles --- */
+body {
+    background-image: url('kraft-paper.jpg'); /* Or corkboard.jpg, etc. */
+    background-size: cover;
+    background-attachment: fixed;
+    color: #333;
+    font-family: 'Caveat', cursive;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* --- Font Styles --- */
+h1, h2, h3 {
+    font-family: 'Indie Flower', cursive;
+    font-weight: 700;
+}
+
+.scrapbook-title, .page-title {
+    text-align: center;
+    font-size: 3em;
+    color: #4b3e2a;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+.caption, .memory-text, .final-message {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+/* --- Cover Page --- */
+.cover-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.polaroid {
+    background: #fff;
+    padding: 10px 10px 30px 10px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
+    margin-bottom: 20px;
+    transform: rotate(3deg);
+    transition: transform 0.3s ease-in-out;
+}
+
+.polaroid:hover {
+    transform: scale(1.05) rotate(3deg);
+}
+
+.polaroid img {
+    width: 250px;
+    height: auto;
+    display: block;
+}
+
+.open-button {
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.5em;
+    padding: 10px 20px;
+    background: #e8c68c;
+    border: 2px dashed #a27c5b;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    transition: background 0.3s;
+}
+
+.open-button:hover {
+    background: #d8b67c;
+}
+
+/* --- Main Content Section --- */
+.memories-section {
+    padding: 50px 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+.memory-page {
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    padding: 40px;
+    margin: 40px auto;
+    max-width: 800px;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.15);
+}
+
+.photo-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin: 30px 0;
+}
+
+.taped-photo {
+    position: relative;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.taped-photo:hover {
+    transform: scale(1.05) rotate(0) !important;
+}
+
+.taped-photo img {
+    width: 250px;
+    height: auto;
+    display: block;
+    border: 5px solid white;
+}
+
+.tape-piece {
+    position: absolute;
+    width: 50px;
+    height: 20px;
+    background: rgba(200, 200, 200, 0.6); /* Semi-transparent grey tape */
+    border: 1px solid rgba(150, 150, 150, 0.5);
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+}
+
+.tape-piece.top-left { top: -10px; left: -10px; transform: rotate(-10deg); }
+.tape-piece.top-right { top: -10px; right: -10px; transform: rotate(15deg); }
+.tape-piece.bottom-left { bottom: -10px; left: -10px; transform: rotate(10deg); }
+.tape-piece.bottom-right { bottom: -10px; right: -10px; transform: rotate(-15deg); }
+
+/* --- Full Screen Photo Section --- */
+.full-screen-photo-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.full-screen-photo {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+/* --- Confetti Animation (Placeholder) --- */
+.confetti-animation {
+    /* You would use a library or CSS keyframes here */
+    /* e.g., using a library like https://www.npmjs.com/package/js-confetti */
+}
+
+/* --- Responsiveness --- */
+@media (max-width: 768px) {
+    .scrapbook-title { font-size: 2em; }
+    .page-title { font-size: 1.8em; }
+    .polaroid img, .taped-photo img { width: 100%; }
+    .memory-page { padding: 20px; }
+}
